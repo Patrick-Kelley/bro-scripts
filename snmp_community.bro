@@ -1,7 +1,3 @@
-#Description="Detects SNMP Default Strings"
-#Protocol="SNMP"
-#CVSS="5.0"
-
 @load base/frameworks/notice
 
 module SNMP_DEFAULT;

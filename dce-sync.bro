@@ -1,4 +1,3 @@
-
 @load base/frameworks/notice
 
 module dce_rpc;

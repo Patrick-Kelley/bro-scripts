@@ -1,7 +1,3 @@
-#Description="Detects Emotet Through DNS Query"
-#Protocol="DNS"
-#CVSS="0.0"
-
 @load base/frameworks/notice
 
 module Emotet;

@@ -1,9 +1,3 @@
-# Developed at Critical Path Security by Patrick Kelley
-# Detects DNS Requests outside of trusted network
-# Requires custom entry of dns servers
-# UID 2017-11-20-0001
-# Version 1.0
-
 @load base/frameworks/notice
 
 module DNS_Query_Notice;

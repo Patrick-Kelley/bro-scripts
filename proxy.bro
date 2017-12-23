@@ -1,9 +1,3 @@
-#Description="Open Proxy Detection"
-#Protocol="HTTP"
-#CreationDate="2017-02-02"
-#Reference="Non-specific"
-#CVSS="5.0"
-
 @load base/utils/site
 @load base/frameworks/notice
 

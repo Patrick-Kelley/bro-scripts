@@ -1,7 +1,3 @@
-#Description="Detects Default Credentials Over Multiple Platforms"
-#Reference="Non-specific"
-#CVSS="0.0"
-
 @load base/frameworks/notice
 
 module Default_Credential_Usage;
