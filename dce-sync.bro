@@ -28,7 +28,6 @@ event dce_rpc_request(c: connection, fid: count, opnum: count, stub_len: count) 
                 NOTICE([$note=notice::GetNCChanges,
                 $conn=c,
                 $msg=fmt("%s requested a DCSync from %s. The command was %s. %s is not on the allowed list", c$id$orig_h, c$id$resp_h, c$dce_rpc$operation, c$id$orig_h),
-                $sub=fmt("Severity: 3.0"),
                 $identifier=cat(c$id$orig_h)]);
                 }
 }
