@@ -43,7 +43,7 @@ event dce_rpc_request(c: connection, fid: count, opnum: count, stub_len: count) 
       return;
   if ( ! c$dce_rpc?$operation )
       return;
-  if ( c$id$orig_h !in domain_controllers && dce_crack_commands in c$dce_rpc$operation )
+  if ( dce_crack_commands in c$dce_rpc$operation )
                 {
                 NOTICE([$note=notice::DCERPC,
                 $conn=c,
