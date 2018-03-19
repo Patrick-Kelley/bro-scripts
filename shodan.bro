@@ -44,26 +44,26 @@ const shodan_address_space: set [addr] = {
 event connection_established(c: connection)
 {
 if ( c$id$orig_h in shodan_address_space )
-					 {
-					 NOTICE([$note=notice::Shodan,
-           $conn=c,
-					 $msg=fmt("%s has initiated a connection from an IP associated with Shodan. The target IP address is %s. The target port is %s.", c$id$orig_h, c$id$resp_h, c$id$resp_p),
-					 $identifier=cat(c$id$orig_h),
-					 $suppress_for=1hr]);
-					 }
+	{
+	NOTICE([$note=notice::Shodan,
+        $conn=c,
+	$msg=fmt("%s has initiated a connection from an IP associated with Shodan. The target IP address is %s. The target port is %s.", c$id$orig_h, c$id$resp_h, c$id$resp_p),
+	$identifier=cat(c$id$orig_h),
+	$suppress_for=1hr]);
+	}
 
 }
 
 event connection_established(c: connection)
 {
 if ( c$id$orig_h in shodan_address_space )
-					 {
-					 NOTICE([$note=notice::Shodan,
-           $conn=c,
-					 $msg=fmt("%s has established a connection from an IP associated with Shodan. The target IP address is %s. The target port is %s.", c$id$orig_h, c$id$resp_h, c$id$resp_p),
-					 $identifier=cat(c$id$orig_h),
-					 $suppress_for=1hr]);
-					 }
+	{
+	NOTICE([$note=notice::Shodan,
+        $conn=c,
+	$msg=fmt("%s has established a connection from an IP associated with Shodan. The target IP address is %s. The target port is %s.", c$id$orig_h, c$id$resp_h, c$id$resp_p),
+	$identifier=cat(c$id$orig_h),
+	$suppress_for=1hr]);
+	}
 
-         }
+   }
 }
